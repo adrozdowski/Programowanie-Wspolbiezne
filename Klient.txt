@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "Prosze podac liczbe"
+read zmienna
+echo "$zmienna" > dane
+while (true); do
+if [ -f wyniki ]
+then
+wynik=$(<wyniki)
+
+echo "$wynik"
+rm wyniki
+break
+fi
+done
+exit 0

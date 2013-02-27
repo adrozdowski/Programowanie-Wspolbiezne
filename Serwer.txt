@@ -1,0 +1,16 @@
+#!/bin/bash
+
+while (true); do
+if [ -f dane ]
+then
+zmienna=$(<dane)
+
+rm dane
+let zmienna=zmienna**2
+echo "$zmienna">wyniki
+
+fi
+done
+exit 0
+
+
